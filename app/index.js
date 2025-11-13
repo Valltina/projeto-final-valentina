@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
-import logo from "../assets/Cine.png"
+import logo from "../assets/Cine.png";
+import { GoogleFonts } from './_layout';
 
 export default function Page() {
   return (
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
     color: '#ffffffff', 
     fontSize: 20,
     textAlign: 'center',
+    fontFamily: 'DelaGothicOne_400Regular'
   },
   TituloCaixa: {
     color: '#ffffffff',

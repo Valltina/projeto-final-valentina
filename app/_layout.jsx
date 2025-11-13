@@ -3,7 +3,34 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { useFonts, DelaGothicOne_400Regular } from '@expo-google-fonts/dela-gothic-one';
+import { Slot, SplashScreen } from 'expo-router';
+import { useEffect } from 'react';
 import { Tabs } from 'expo-router';
+
+
+SplashScreen.preventAutoHideAsync();
+
+export function GoogleFonts() {
+  const [fontsLoaded, fontError] = useFonts({
+    DelaGothicOne_400Regular 
+  });
+
+  useEffect(() => {
+    if (fontsLoaded || fontError){
+        SplashScreen.hideAsync();
+    }
+  },[fontsLoaded, fontError])
+
+  if (!fontsLoaded && !fontError){
+    return null;
+
+  }
+
+  return (
+    <Slot/>
+  )
+}
 
 
 export default function Layout() {
