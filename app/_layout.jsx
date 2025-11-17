@@ -3,7 +3,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { useFonts, DelaGothicOne_400Regular } from '@expo-google-fonts/dela-gothic-one';
+import { useFonts, Epilogue_400Regular, Epilogue_700Bold, Epilogue_900Black } from '@expo-google-fonts/epilogue';
 import { Slot, SplashScreen } from 'expo-router';
 import { useEffect } from 'react';
 import { Tabs } from 'expo-router';
@@ -13,7 +13,9 @@ SplashScreen.preventAutoHideAsync();
 export default function Layout() {
 
   const [fontsLoaded, fontError] = useFonts({
-    DelaGothicOne_400Regular
+    Epilogue_400Regular,
+    Epilogue_700Bold,
+    Epilogue_900Black
   });
 
   useEffect(() => {

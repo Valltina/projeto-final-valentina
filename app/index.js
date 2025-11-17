@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Image } from "react-native";
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import logo from "../assets/Cine.png";
 import { GoogleFonts } from './_layout';
 import { useState } from "react";
@@ -6,9 +7,10 @@ import { useState } from "react";
 export default function Page() {
   const [curiosidades, setCuriosidades] = useState([
     { time: 8, message: "Texto 1" },
-    { time: 10, message: "Texto 2" },
-    { time: 11, message: "Texto 3" },
-    { time: 12, message: "Texto 4" }
+    { time: 9, message: "Texto 2" },
+    { time: 10, message: "Texto 3" },
+    { time: 11, message: "Texto 4" },
+    { time: 12, message: "Texto 5" }
   ])
 
   const getMessage = () => {
@@ -37,11 +39,17 @@ export default function Page() {
 
 
       <View>
-        <Text style={styles.Curiosidade}>Você sabia?</Text>
+        <View>
+           <Text style={styles.Curiosidade}>Você sabia? <MaterialCommunityIcons name="lightbulb-on-10" size={24} color="" /></Text>
+        
+        </View>
+       
 
+<View style={styles.Centralizar}>
         <View style={styles.Caixa2}>
           <Text style={styles.TextoCaixa2}>{getMessage()}
           </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -82,9 +90,9 @@ const styles = StyleSheet.create({
 
   TextoCaixa: {
     color: '#ffffffff',
-    fontSize: 20,
+    fontSize: 14,
     textAlign: 'center',
-    fontFamily: 'DelaGothicOne_400Regular'
+    fontFamily: 'Epilogue_400Regular'
   },
   TituloCaixa: {
     color: '#ffffffff',
@@ -102,13 +110,18 @@ const styles = StyleSheet.create({
     padding: 10,
     marginTop: -15,
     borderRadius: 20,
-    width: '90%',
-    alignItems: "center",
+    width: '80%',
+   display: 'flex',
+   alignItems: 'center'
   },
   TextoCaixa2: {
     color: '#ffffffff',
     fontSize: 20,
     textAlign: 'center',
-    fontFamily: 'DelaGothicOne_400Regular'
+    fontFamily: 'Epilogue_900Black'
   },
+  Centralizar: {
+    display:'flex',
+    alignItems:'center'
+  }
 });
