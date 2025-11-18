@@ -1,11 +1,25 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
+import saltburn from "../assets/saltburn.jpg";
 
 export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Livre</Text>
-        <Text style={styles.subtitle}>Conteudo livre para trabalhar em conjunto com o tema obrigatorio</Text>
+
+        <View style={styles.Caixa}>
+            <Image source={saltburn} style={styles.fotofilme} />
+                <Text style={styles.TextoCaixa}>
+                  Este aplicativo </Text>
+              </View>
+
+              <View style={styles.Caixa}>
+            <Image source={saltburn} style={styles.fotofilme} />
+                <Text style={styles.TextoCaixa}>
+                  Este aplicativo </Text>
+              </View>
+              
+              
+
       </View>
     </View>
   );
@@ -16,20 +30,45 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     padding: 24,
-    backgroundColor: "#e6cbffff",
+    backgroundColor: "#f8edd4ff",
   },
   main: {
     flex: 1,
     justifyContent: "center",
     maxWidth: 960,
     marginHorizontal: "auto",
+    flexDirection:'row',
+    flexWrap:"wrap",
+    paddingVertical:20,
+    
   },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
+   Caixa: {
+    backgroundColor: '#ffffff',
+    padding: 10,  elevation: 5,
+    borderRadius: 20,
+    width: '40%',
+  
+    
   },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
+
+  TextoCaixa: {
+    color: '#ffffffff',
+    fontSize: 14,
+    textAlign: 'center',
+    fontFamily: 'Epilogue_400Regular'
   },
+  TituloCaixa: {
+    color: '#ffffffff',
+    fontSize: 30,
+    textAlign: 'center',
+  },
+  
+  fotofilme: {
+    height: 70,
+    width: 70,
+    borderRadius: 8,
+
+  },
+
+
 });
