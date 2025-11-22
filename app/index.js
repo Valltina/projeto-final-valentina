@@ -6,11 +6,31 @@ import { useState } from "react";
 
 export default function Page() {
   const [curiosidades, setCuriosidades] = useState([
-    { time: 8, message: "Texto 1" },
-    { time: 9, message: "Texto 2" },
-    { time: 10, message: "Texto 3" },
-    { time: 11, message: "Texto 4" },
-    { time: 12, message: "Texto 5" }
+    { time: 1, message: "Texto 1" },
+    { time: 2, message: "Texto 2" },
+    { time: 3, message: "Texto 3" },
+    { time: 4, message: "Texto 4" },
+    { time: 5, message: "Texto 5" },
+    { time: 6, message: "22" },
+    { time: 7, message: "a" },
+    { time: 8, message: "b" },
+    { time: 9, message: "a" },
+    { time: 10, message: "a" },
+    { time: 11, message: "a" },
+    { time: 12, message: "a" },
+    { time: 13, message: "a" },
+    { time: 14, message: "a" },
+    { time: 15, message: "a" },
+    { time: 16, message: "a" },
+    { time: 17, message: "a" },
+    { time: 18, message: "a" },
+    { time: 19, message: "a" },
+    { time: 20, message: "a" },
+    { time: 21, message: "O custo de um longa-metragem pode ter milhões de dólares só em película e revelação." },
+    { time: 22, message: "a" },
+    { time: 23, message: "a" },
+    { time: 24, message: "a" },
+
   ])
 
   const getMessage = () => {
@@ -78,47 +98,50 @@ const styles = StyleSheet.create({
   },
 
   Caixa: {
-    backgroundColor: '#e7c077ff',
+    backgroundColor: '#fffaf0ff',
     padding: 20,
     borderRadius: 25,
     width: '90%',
     marginTop: '50',
-    borderWidth: 2,
-    borderColor: '#cc9837ff',
+    borderWidth: 1,
+    borderColor: '#d4b273ff',
 
   },
 
   TextoCaixa: {
-    color: '#ffffffff',
-    fontSize: 14,
+    color: '#9c2323ff',
+    fontSize: 19,
     textAlign: 'center',
     fontFamily: 'Epilogue_400Regular'
   },
   TituloCaixa: {
-    color: '#ffffffff',
-    fontSize: 30,
+    color: '#9c2323ff',
+    fontSize: 35,
     textAlign: 'center',
+    fontFamily: 'Epilogue_500Medium'
   },
   Curiosidade: {
     color: '#9c2323ff',
-    fontSize: 25,
+    fontSize: 28,
     textAlign: 'center',
     padding: 25,
+    fontFamily: 'Epilogue_700Bold',
+    marginTop: 25,
   },
   Caixa2: {
     backgroundColor: '#9c2323ff',
     padding: 10,
     marginTop: -15,
     borderRadius: 20,
-    width: '80%',
+    width: '90%',
    display: 'flex',
    alignItems: 'center'
   },
   TextoCaixa2: {
     color: '#ffffffff',
-    fontSize: 20,
+    fontSize: 18,
     textAlign: 'center',
-    fontFamily: 'Epilogue_900Black'
+    fontFamily: 'Epilogue_500Medium'
   },
   Centralizar: {
     display:'flex',
