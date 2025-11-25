@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import saltburn from "../assets/saltburn.jpg";
+import oppenheimer from "../assets/oppenheimer.png";
 
 
 
@@ -13,7 +14,7 @@ export default function Page() {
       <View style={styles.main}>
 
     <Text style={styles.tituloTopo}>
-        Frame Revelado <Fontisto name="film" size={24} color="" />
+        Frame Revelad<Fontisto name="film" size={22} color="" />
     </Text>
     <Text style={styles.textoTopo}>
         Explore as melhores obras e suas películas originais.
@@ -34,7 +35,7 @@ export default function Page() {
 
 
         <View style={styles.Caixa}>
-    <Image source={saltburn} style={styles.fotofilme} />
+    <Image source={oppenheimer} style={styles.fotofilme} />
     
         <Text style={styles.TituloFilme}>
             Oppenheimer
@@ -112,11 +113,9 @@ const styles = StyleSheet.create({
   },
 
   container: {
-    flex: 1,
+    
     alignItems: "center",
     padding: 24,
-    backgroundColor: "#f8edd4ff",
-    
   },
   main: {
         flex: 1,
