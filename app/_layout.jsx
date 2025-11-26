@@ -70,6 +70,16 @@ export default function Layout() {
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="user-circle-o" color={color} />,
         }}
       />
+
+      <Tabs.Screen
+                // O nome deve ser o nome do arquivo do seu componente Laboratório
+                name="Laboratorio"  options={{
+                    title: 'Laboratório', // Título interno (opcional)
+                    href: null, // <--- ISSO ESCONDE A ROTA DA BARRA DE NAVEGAÇÃO!
+                }}
+            />
+            
+       
     </Tabs>
   );
 

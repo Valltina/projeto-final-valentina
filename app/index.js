@@ -25,7 +25,7 @@ export default function Page() {
     { time: 17, message: "No cinema mudo, a velocidade do filme era alterada manualmente, sem padrão." },
     { time: 18, message: "O padrão de 24 quadros por segundo veio com o cinema falado (pelo som)." },
     { time: 19, message: "As perfurações laterais são cruciais para o transporte do filme pela câmera." },
-    { time: 20, message: "aA maioria dos filmes de antes de 1930 se perdeu pela degradação do nitrato."},
+    { time: 20, message: "A maioria dos filmes de antes de 1930 se perdeu pela degradação do nitrato."},
     { time: 21, message: "O custo de um longa-metragem pode ter milhões de dólares só em película e revelação." },
     { time: 22, message: "A revelação exige processos químicos complexos em câmaras escuras." },
     { time: 23, message: "Cópias de exibição em película se danificam a cada projeção." },
@@ -100,11 +100,14 @@ const styles = StyleSheet.create({
   Caixa: {
     backgroundColor: '#fffaf0ff',
     padding: 20,
-    borderRadius: 25,
     width: '90%',
     marginTop: '50',
-    borderWidth: 1,
-    borderColor: '#d4b273ff',
+    elevation: 9,
+    shadowColor: "#c06f2dff",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    borderRadius: 25,
 
   },
 
