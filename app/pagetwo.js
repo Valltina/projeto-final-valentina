@@ -3,6 +3,10 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import saltburn from "../assets/saltburn.jpg";
 import oppenheimer from "../assets/oppenheimer.png";
+import central from "../assets/centralbra.png";
+import fallen from "../assets/fallen.png";
+import moon from "../assets/moon.png";
+import little from "../assets/little.png";
 
 
 
@@ -48,8 +52,7 @@ export default function Page() {
 
 
         <View style={styles.Caixa}>
-    <Image source={saltburn} style={styles.fotofilme} />
-    
+    <Image source={central} style={styles.fotofilme} />
         <Text style={styles.TituloFilme}>
             Central do Brasil
         </Text>
@@ -61,7 +64,7 @@ export default function Page() {
 
 
         <View style={styles.Caixa}>
-    <Image source={saltburn} style={styles.fotofilme} />
+    <Image source={fallen} style={styles.fotofilme} />
     
         <Text style={styles.TituloFilme}>
            Fallen Angels
@@ -74,7 +77,7 @@ export default function Page() {
 
 
         <View style={styles.Caixa}>
-    <Image source={saltburn} style={styles.fotofilme} />
+    <Image source={moon} style={styles.fotofilme} />
     
         <Text style={styles.TituloFilme}>
             Moonrise Kingdom
@@ -88,7 +91,7 @@ export default function Page() {
 
         
         <View style={styles.Caixa}>
-    <Image source={saltburn} style={styles.fotofilme} />
+    <Image source={little} style={styles.fotofilme} />
     
         <Text style={styles.TituloFilme}>
             Little Women
