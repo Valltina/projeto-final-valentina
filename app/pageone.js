@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity} from "react-nativ
 import { useRouter } from 'expo-router';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import Fontisto from '@expo/vector-icons/Fontisto';
 
 
 export default function Page() {
@@ -80,7 +81,7 @@ export default function Page() {
                     onPress={onStartInteractive}
                 >
                     <Text style={styles.labButtonText}>
-                        <FontAwesome6 name="flask" size={16} color="#ffffff" />  Iniciar Laboratório Analógico
+                        <Fontisto name="film" size={22} color="" /> Iniciar Quiz 
                     </Text>
                 </TouchableOpacity>
 
@@ -157,23 +158,24 @@ const styles = StyleSheet.create({
     },
 
     labButton: {
-        backgroundColor: '#006400',
-        paddingVertical: 15,
-        paddingHorizontal: 25,
+        backgroundColor: '#aa2b0cff',
+        padding: 15,
         borderRadius: 30,
-        marginTop: 20,
-        marginBottom: 30,
-        alignSelf: 'stretch',
+        marginTop: 15,
+        marginBottom: 20,
+        width: '85%',
+alignSelf: 'center',
         elevation: 8,
-        shadowColor: '#006400',
+        shadowColor: '#9c3107ff',
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.3,
         shadowRadius: 6,
+       
     },
     labButtonText: {
-        color: '#ffffff',
-        fontSize: 18,
-        fontWeight: 'bold',
+        color: '#ffeddeff',
+        fontSize: 19,
         textAlign: 'center',
+        fontFamily:'Epilogue_700Bold',
     },
 });

@@ -3,7 +3,9 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { useFonts, Epilogue_400Regular, Epilogue_700Bold, Epilogue_900Black, Epilogue_500Medium, Epilogue_300Light, Epilogue_600SemiBold } from '@expo-google-fonts/epilogue';
+import { useFonts, Epilogue_400Regular, Epilogue_700Bold, Epilogue_900Black, 
+  Epilogue_500Medium, Epilogue_300Light, Epilogue_600SemiBold,
+ } from '@expo-google-fonts/epilogue';
 import { Slot, SplashScreen } from 'expo-router';
 import { useEffect } from 'react';
 import { Tabs } from 'expo-router';
@@ -73,8 +75,8 @@ export default function Layout() {
 
       <Tabs.Screen
                 // O nome deve ser o nome do arquivo do seu componente Laboratório
-                name="Laboratorio"  options={{
-                    title: 'Laboratório', // Título interno (opcional)
+                name="Adivinha35mm"  options={{
+                    title: 'Adivinha35mm', // Título interno (opcional)
                     href: null, // <--- ISSO ESCONDE A ROTA DA BARRA DE NAVEGAÇÃO!
                 }}
             />

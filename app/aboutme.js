@@ -22,10 +22,10 @@ export default function AboutMe() {
                 
                 
                 <Text style={styles.tituloTopo}>
-                    Sobre Mim
+                    Valentina
                 </Text>
                 <Text style={styles.textoTopo}>
-                    Conheça um pouco sobre a criadora desta aplicação de cinema analógico.
+                    Avaliação DDM 2°Info
                 </Text>
 
                
@@ -68,9 +68,7 @@ export default function AboutMe() {
     );
 }
 
-// ----------------------------------------------------
-// ESTILOS
-// ----------------------------------------------------
+
 const styles = StyleSheet.create({
     scrollView: {
         flex: 1,
