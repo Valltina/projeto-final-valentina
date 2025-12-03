@@ -147,10 +147,12 @@ const styles = StyleSheet.create({
         color: '#8b080fff',
         marginBottom: 8,
         fontWeight: '600',
+        fontFamily: 'Epilogue_500Medium'
     },
     TextoCaixa: {
         fontSize: 15, 
         color: '#666',
         marginBottom: 5,
+        fontFamily: 'Epilogue_400Regular'
     },
 });
