@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import oppenheimer from "../assets/oppenheimer.png";
+import perfil from "../assets/perfil.jpeg";
 
 
 
@@ -13,52 +13,51 @@ export default function AboutMe() {
         >
             <View style={styles.main}>
                 
+                <View style={styles.caixafoto} >
+              
                
                 <View style={styles.photoContainer}>
-    
-                  <Image source={oppenheimer} style={styles.profileImagePlaceholder} />
+     </View>
+                  <Image source={perfil} style={styles.profileImage} />
                     </View>
                 </View>
-                
+                 
                 
                 <Text style={styles.tituloTopo}>
-                    Valentina
-                </Text>
-                <Text style={styles.textoTopo}>
                     Avaliação DDM 2°Info
                 </Text>
+                
 
                
                 
                 <View style={styles.boxesContainer}>
                     
-                    <View style={[styles.Caixa, , { borderLeftColor:"#750307ff" }]}>
+                    <View style={[styles.Caixa,  { borderLeftColor:"#750307ff" }]}>
                         <Text style={styles.TituloCaixa}>
-                            <FontAwesome name="code" size={20} color='' /> O Projeto
+                            <FontAwesome name="user-circle" size={20}  color='' />   Sobre mim
                         </Text>
                         <Text style={styles.TextoCaixa}>
-                            Esta aplicação foi desenvolvida como parte de um estudo sobre a Película 35mm e as tecnologias de desenvolvimento mobile (React Native/Expo).
+                           Oi! Eu sou a Valentina e sou a criadora do "Sétimo Frame".
+Atualmente, estou no 2º ano do Ensino Médio com Técnico em Informática e esse projeto é um pedacinho de tudo que aprendi até agora.
+Aqui eu juntei todos os conhecimentos de desenvolvimento que adquiri nas aulas de DDM e Informática e complementei com muitas pesquisas por conta própria.
                         </Text>
                     </View>
-
+ 
                     <View style={[styles.Caixa, { borderLeftColor:"#92070cff" }]}>
                         <Text style={styles.TituloCaixa}>
-                            <FontAwesome name="envelope" size={20} color='' /> Contato
+                            <FontAwesome name="code" size={20} color='' />   Desenvolvimento
                         </Text>
                         <Text style={styles.TextoCaixa}>
-                            Para sugestões, feedback ou dúvidas, você pode entrar em contato através do e-mail:
-                        </Text>
-                        <Text style={styles.LinkTexto}>
-                            [seu.email@exemplo.com]
+                           Este aplicativo foi desenvolvido como parte de um estudo sobre a Película 35mm e as tecnologias de desenvolvimento mobile (React Native/Expo)
                         </Text>
                     </View>
 
                     <View style={[styles.Caixa, { borderLeftColor:"#c4070dff" }]}>
                         <Text style={styles.TituloCaixa}>
-                            <FontAwesome name="tag" size={20} color='' /> Versão
+                            <FontAwesome name="film" size={20} color='' />   Aplicativo
                         </Text>
                         <Text style={styles.TextoCaixa}>
-                            Versão 1.0.0
+                            Criar o "Sétimo Frame" foi uma jornada de aprendizado incrível para aplicar na prática as minhas habilidades e prestar uma homenagem à magia da película 35mm.
                         </Text>
                     </View>
 
@@ -85,6 +84,17 @@ const styles = StyleSheet.create({
         maxWidth: 960,
         width: '100%', 
     },  
+
+    caixafoto: { 
+        alignItems: 'center',
+        height: 120, 
+        backgroundColor: '#530202ff',
+        marginTop: -25,
+        marginLeft: -77,
+        width: '150%',
+    },
+     marginLeft: -0,
+        width: '100%',
     
     photoContainer: {
         width: '100%',
@@ -92,15 +102,14 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginTop: 30,
     },
-    profileImagePlaceholder: {
+    profileImage: {
         width: 120,
         height: 120,
         borderRadius: 60,
-        backgroundColor: '#e64646ff',
         justifyContent: 'center',
         alignItems: 'center',
-        borderWidth: 4,
-        borderColor:'#bb4c4cff',
+        borderWidth: 6,
+        borderColor:'#530202ff',
     },
     
   
@@ -108,20 +117,12 @@ const styles = StyleSheet.create({
         fontSize: 28,
         color: '#8b080fff',
         textAlign: 'center',
-        marginBottom: 3,
-        width: '100%',
-        fontWeight: 'bold', 
-    },
-    textoTopo: {
-        fontSize: 18,
-        borderColor:'#bb4c4cff',
-        textAlign: 'center',
+        marginTop: 60,
         marginBottom: 20,
-        marginTop: 10 ,
-        padding: 3,
         width: '100%',
-        color:'#bb4c4cff',
+        fontFamily: 'Epilogue_700Bold',
     },
+    
 
     boxesContainer: {
         width: '100%',
@@ -152,9 +153,4 @@ const styles = StyleSheet.create({
         color: '#666',
         marginBottom: 5,
     },
-    LinkTexto: {
-        fontSize: 15,
-        color:' #d35555ff',
-        fontWeight: 'bold',
-    }
 });

@@ -74,10 +74,9 @@ export default function Layout() {
       />
 
       <Tabs.Screen
-                // O nome deve ser o nome do arquivo do seu componente Laboratório
                 name="Adivinha35mm"  options={{
-                    title: 'Adivinha35mm', // Título interno (opcional)
-                    href: null, // <--- ISSO ESCONDE A ROTA DA BARRA DE NAVEGAÇÃO!
+                    title: 'Adivinha35mm',
+                    href: null, 
                 }}
             />
             
